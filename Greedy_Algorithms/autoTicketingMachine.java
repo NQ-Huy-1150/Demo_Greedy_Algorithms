@@ -1,5 +1,6 @@
 package Greedy_Algorithms;
 import java.util.Scanner;
+import java.util.ArrayList;
 //gia ve duong sat bac nam
 public class autoTicketingMachine {
     public static void main(String[] args) {
@@ -40,7 +41,7 @@ public class autoTicketingMachine {
         }
         sum = price * count;
         // in hoa don va xac nhan thanh toan
-        System.out.printf("Hoá đơn của bạn (đơn vị K vnđ) : %d K\n",sum);
+        System.out.printf("Hoá đơn của bạn (đơn vị vnđ) : %d K\n",sum);
         do{
             System.out.printf("Hãy nhập vào số tiền bạn muốn thanh toán (> %d K) : ",sum);
             customer = scanner.nextInt();
@@ -51,12 +52,19 @@ public class autoTicketingMachine {
         int amount = customer - sum;
         System.out.printf("so tien can phai tra lai cho khach hang : %d K\n",amount);
         int[] arr = {500, 200, 100, 50, 20, 10, 5, 2, 1};
+        ArrayList<String> a = new ArrayList<>(); // log file
         int cnt = 0; // dem so luong to tien
         for (int i = 0; i < arr.length; i++) {
-            cnt += amount/arr[i];
+            int temp = amount/arr[i];
+            cnt += temp;
+            if (temp != 0) {
+                a.add(temp + " x " + arr[i] + "K ");
+            }
             amount %= arr[i];
         }
+        // in ra so to tien it nhat can phai tra cho khach
         System.out.printf("So to phai tra cho khach : %d\n",cnt);
-        scanner.close();
+        // in ra log de kiem tra lai
+        System.out.println(a);
     }
 }
