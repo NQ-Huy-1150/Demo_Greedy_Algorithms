@@ -66,5 +66,6 @@ public class autoTicketingMachine {
         System.out.printf("So to phai tra cho khach : %d\n",cnt);
         // in ra log de kiem tra lai
         System.out.println(a);
+        scanner.close();
     }
 }
