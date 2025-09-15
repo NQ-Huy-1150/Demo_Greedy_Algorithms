@@ -1,6 +1,6 @@
 package Greedy_Algorithms;
-import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Scanner;
 //gia ve duong sat bac nam
 public class autoTicketingMachine {
     public static void main(String[] args) {
@@ -41,7 +41,7 @@ public class autoTicketingMachine {
         }
         sum = price * count;
         // in hoa don va xac nhan thanh toan
-        System.out.printf("Hoá đơn của bạn (đơn vị vnđ) : %d K\n",sum);
+        System.out.printf("Hoá đơn của bạn (đơn vị K vnđ) : %d K\n",sum);
         do{
             System.out.printf("Hãy nhập vào số tiền bạn muốn thanh toán (> %d K) : ",sum);
             customer = scanner.nextInt();
