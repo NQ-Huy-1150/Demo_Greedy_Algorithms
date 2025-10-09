@@ -1,6 +1,6 @@
 import tkinter as tk
 
-NAMES = ["4 giường T2 (1609K)", "6 giường T1 (1444K)", "6 giường T3 (1146K)",
+NAMES = ["Khoang 4 giường T2 (1609K)", "Khoang 6 giường T1 (1444K)", "Khoang 6 giường T3 (1146K)",
          "Ngồi mềm (966K)", "Ngồi cứng (744K)", "Ghế phụ (524K)"]
 PRICES = [1609, 1444, 1146, 966, 744, 524]
 DENOMS = [500, 200, 100, 50, 20, 10, 5, 2, 1]   # đơn vị: K VND
@@ -25,7 +25,7 @@ def calc():
     cost, i, qty = current_cost()
     paid = get_int(e_paid, 0)
     if paid < cost:
-        out.config(text="❌ Lỗi: Tiền khách đưa phải ≥ hóa đơn!")
+        out.config(text="Lỗi: Tiền khách đưa phải ≥ hóa đơn!")
         return
     change = paid - cost
     lines, cnt = [], 0

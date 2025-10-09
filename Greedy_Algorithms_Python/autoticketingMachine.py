@@ -1,5 +1,5 @@
 ticket = """
-Bảng giá vé Hà Nội - Sài Gòn của tàu SE7
+Bảng giá vé 1 chiều Hà Nội - Sài Gòn của tàu SE7
 1: Nằm khoang 4 điều hoà T2 : 1,609,000đ
 2: Nằm khoang 6 điều hoà T1 : 1,444,000đ
 3: Nằm khoang 6 điều hoà T3 : 1,146,000đ
